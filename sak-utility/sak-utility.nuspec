@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sak-utility</id>
+    <version>0.9.3</version>
+    <title>S.A.K. Utility</title>
+    <authors>Randy Northrup</authors>
+    <owners>RandyNorthrup</owners>
+    <projectUrl>https://sakutility.com/</projectUrl>
+    <iconUrl>https://sakutility.com/assets/icons/app-icon-256.png</iconUrl>
+    <copyright>Copyright (c) 2025-2026 Randy Northrup</copyright>
+    <licenseUrl>https://github.com/RandyNorthrup/S.A.K.-Utility/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/RandyNorthrup/S.A.K.-Utility</projectSourceUrl>
+    <packageSourceUrl>https://github.com/RandyNorthrup/chocolatey-packages/tree/main/sak-utility</packageSourceUrl>
+    <docsUrl>https://sakutility.com/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/RandyNorthrup/S.A.K.-Utility/issues</bugTrackerUrl>
+    <tags>sak-utility backup partition-manager diagnostics benchmark portable sysadmin technician usb iso network pst uninstaller foss admin</tags>
+    <summary>Free, portable Windows toolkit for PC technicians, IT pros, and sysadmins.</summary>
+    <description><![CDATA[S.A.K. Utility is a free, open-source, portable Windows toolkit for PC technicians, IT pros, and sysadmins. It combines profile backup and restore, partition management, diagnostics, app deployment and removal, file and network tools, USB image flashing, email archive tools, and optional AI repair workflows.
+
+## Features
+
+- **Backup and Restore:** guided wizards that move Windows user profiles to a new PC, with optional AES-256 encryption and compression.
+- **Partition Manager:** queue changes and review them before applying; resize, move, merge, split, create, delete and format partitions, convert between MBR and GPT, and read APFS, HFS+ and ext file systems.
+- **Benchmark and Diagnostics:** SMART drive health, hardware inventory, CPU, disk and memory benchmarks, stress tests, and HTML, JSON and CSV reports.
+- **Application Management:** bulk installs through Chocolatey, offline deployment bundles, Advanced Uninstall with leftover scans, and a vulnerability scanner.
+- **Image Flasher:** write ISO and IMG files to USB drives, build Windows ISOs from Microsoft UUP files, and download Linux and recovery images.
+- **File and Network tools:** File Explorer, duplicate finder, advanced search, ping, traceroute, MTR, DNS, port scan, iPerf3, WiFi analysis, and adapter backup and restore.
+- **Email Tools:** open PST, OST, NST and MBOX archives without Outlook, search them, and export messages, contacts and calendars.
+- **AI Assistant (optional):** guided repair workflows and service reports, using your own OpenAI API key.
+
+## Notes
+
+- The app runs as a standard user and asks for administrator rights when a task needs them.
+- It keeps its settings, logs and reports in a `data` folder beside the program and will not start from a read-only folder, so this package installs it to the Chocolatey tools location (by default `C:\tools\sak-utility`), not to the package folder. Only administrators can change the program files there; every user can write to its `data` folder.
+- The `sak-utility` command and a Start menu shortcut start the app.
+- Uninstalling removes the program and keeps the `data` folder.
+- Built and tested on 64-bit Windows 11. Windows 10 version 1809 or later meets the minimum requirements but is not part of release testing.
+]]></description>
+    <releaseNotes>https://github.com/RandyNorthrup/S.A.K.-Utility/releases/tag/v0.9.3</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
